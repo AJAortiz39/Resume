@@ -184,37 +184,37 @@
           <ul class="list-inline dev-icons">
               
             <li class="list-inline-item">
-              <i class="devicon-python-plain-wordmark"></i>
+              <i class="devicon-python-plain-wordmark" id="py"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-csharp-line colored"></i>
+              <i class="devicon-csharp-line colored" id="cs"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-cplusplus-line colored"></i>
+              <i class="devicon-cplusplus-line colored" id="cp"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-javascript-plain"></i>
+              <i class="devicon-javascript-plain" id="js"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-jquery-plain-wordmark colored"></i>
+              <i class="devicon-jquery-plain-wordmark colored" id="jq"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-html5-plain colored" id="h5"></i>
             </li>
               <li class="list-inline-item">
-              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-css3-plain-wordmark colored" id="c3"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-bootstrap-plain-wordmark colored"></i>
+              <i class="devicon-bootstrap-plain-wordmark colored" id="bs"></i>
             </li>
               <li class="list-inline-item">
-              <i class="devicon-dot-net-plain-wordmark colored"></i>
+              <i class="devicon-dot-net-plain-wordmark colored" id="dn"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-visualstudio-plain colored"></i>
+              <i class="devicon-visualstudio-plain colored" id="vs"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-github-plain-wordmark colored"></i>
+              <i class="devicon-github-plain-wordmark colored" id="gb"></i>
             </li>
            
           </ul>
@@ -262,12 +262,78 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
 
-      <script>
+      <!--<script>
           $(document).ready(function(){
               $(".list-inline-item").click(function(){
                   alert("Python, C#, C++, JavaScript, JQuery, HTML5, CSS3, Bootstrap, Microsoft .NET, Microsoft Visual Studio, Github. (Not Shown): SQLite, Microsoft SQL Server Management Studio.");
               });
           });
+      </script>-->
+      <script>
+          $(document).ready(function(){
+              $("#py").click(function(){
+                  alert("Python");
+              });
+          });
+          
+          $(document).ready(function(){
+              $("#cs").click(function(){
+                  alert("C#");
+              });
+          });
+          $(document).ready(function(){
+              $("#cp").click(function(){
+                  alert("C++");
+              });
+          });
+          $(document).ready(function(){
+              $("#js").click(function(){
+                  alert("JavaScript");
+              });
+          });
+          
+            $(document).ready(function(){
+              $("#jq").click(function(){
+                  alert("jQuery");
+              });
+          });
+          
+           $(document).ready(function(){
+              $("#h5").click(function(){
+                  alert("HTML5");
+              });
+          });
+          
+           $(document).ready(function(){
+              $("#c3").click(function(){
+                  alert("CSS3");
+              });
+          });
+          
+           $(document).ready(function(){
+              $("#bs").click(function(){
+                  alert("Bootstrap");
+              });
+          });
+          
+          $(document).ready(function(){
+              $("#dn").click(function(){
+                  alert("Microsoft .Net");
+              });
+          });
+          
+          $(document).ready(function(){
+              $("#vs").click(function(){
+                  alert("Microsoft Visual Studio");
+              });
+          });
+          
+          $(document).ready(function(){
+              $("#gb").click(function(){
+                  alert("GitHub");
+              });
+          });
+          
       </script>
   </body>
 
