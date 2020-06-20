@@ -43,6 +43,8 @@
       
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+
 
 
 
@@ -66,7 +68,7 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <!-- @TODO switch experience and education -->
+          <!-- @TODO  switch experience and education -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
           </li>
@@ -110,31 +112,37 @@
           </div>
         </div>
       </section
-
       <hr class="m-0">
-
+      <!-- @TODO Add new description -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
-          <!-- @TODO add newest job -->
-          <!-- @TODO fix jane addams description -->
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software Engineer Intern</h3>
+              <div class="subheading mb-3"><a href="https://www.neighborhoods.com">Neighborhoods.com</a></div>
+              <p>● 	Gained hands on experience with the software development lifecycle, including the use of PHP, Git, Continuous Integration, Agile methodologies, code review, and production deployment.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">February 2020 - April 2020</span>
+            </div>
+          </div>
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Computer Programming Aide</h3>
               <div class="subheading mb-3"><a href="https://socialwork.uic.edu">Jane Addams College of Social Work - University of Illinois at Chicago</a></div>
-              <p>●	Maintaining and debugging university applications.<br>  ●	Maintaining databases utilizing SQL Server Management Studio.<br> ●	Assisting publicist with implementation of Google Analytics and Google Tag Manager. <br>●	Troubleshooting IT issues at the University.
-</p>
+              <p>●	Debugged university applications, maintained databases, and had exposure to .NET framework. (C#, SQL Server Management Studio)</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">September 2018 - January 2020</span>
             </div>
           </div>
-          <!-- @TODO fix SPL description -->
+
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Software Engineer Intern</h3>
               <div class="subheading mb-3"><a href="https://www.sproutingleaders.org">Sprouting Leaders Foundation</a></div>
-                <p>●  Assisting Director of IT with building a data visualization map of Chicago in which demonstrates the poverty levels broken up by neighborhoods. Gathered data from data.cityofchicago.org.  (JavaScript/D3.js)  <br>  ●	Collaborated with SLF IT team to create an application (Python) to parse CPS demographic files (pandas) and used Google Maps API to locate CPS elementary schools near partnered Universities (Chicagoland area).</p>
+                <p>●	Collaborated with SLF IT team to create an application to parse CPS demographic files and used Google Maps API to locate CPS elementary schools near partnered Universities (Chicagoland area). (Python)</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">January 2018 - January 2020</span>
@@ -145,8 +153,7 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Trax ERP Content Associate (IT) - Intern</h3>
               <div class="subheading mb-3"><a href="https://metrarail.com">Metra Railroad Company</a></div>
-              <p> ●	Collaborated with ERP team with implementation and maintenance of newly established ERP Database while following protocols to wisely implement sensitive information. <br> ● Manipulated data from Microsoft AX to create reports for the director of Application Architecture.<br> ● Consolidated ticket system, documented system errors, provided data queries, and technical support.
-</p>
+              <p> ●	Collaborated with ERP team with implementation and maintenance of newly established ERP Database while following protocols to wisely implement sensitive information.</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">May 2017 - January 2018</span>
@@ -195,22 +202,17 @@
               <i class="devicon-python-plain-wordmark" id="py"></i>
             </li>
             <li class="list-inline-item">
+              <i class="devicon-php-plain colored" id="php"></i>
+            </li>
+            <li class="list-inline-item">
               <i class="devicon-csharp-line colored" id="cs"></i>
             </li>
             <li class="list-inline-item">
               <i class="devicon-cplusplus-line colored" id="cp"></i>
             </li>
-            
             <li class="list-inline-item">
                <i class="devicon-javascript-plain" id="js"></i> 
-            </li> 
-            <!--
-             <li class="list-inline-item">
-              <i class="fab fa-react" id="rea"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="fab fa-node" id="njs"></i>
-            </li>-->
             <li class="list-inline-item">
               <i class="devicon-jquery-plain-wordmark colored" id="jq"></i>
             </li>
@@ -350,7 +352,11 @@
                   alert("Microsoft Visual Studio");
               });
           });
-          
+        $(document).ready(function(){
+          $("#php").click(function(){
+            alert("PHP");
+          });
+        });
           $(document).ready(function(){
               $("#gb").click(function(){
                   alert("GitHub");
